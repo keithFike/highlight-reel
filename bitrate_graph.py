@@ -5,11 +5,11 @@ import ffmpeg
 
 import matplotlib.pylab as plt
 
-def getFrames():
+def getFrames(video_to_probe):
     frame_dict = {}
     frame_count = 0
 
-    video_probe = ffmpeg.probe("test.mp4", 
+    video_probe = ffmpeg.probe(video_to_probe, 
                                cmd='ffprobe', 
                                show_frames=None)
 

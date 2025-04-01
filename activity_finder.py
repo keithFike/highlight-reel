@@ -14,7 +14,7 @@ def findActivity(frames_dict):
             frames_dict[frame].append(0)
 
 if __name__ == "__main__":
-    frames_dict = getFrames()
+    frames_dict = getFrames("test.mp4")
 
     findActivity(frames_dict)
 
