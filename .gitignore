@@ -1,0 +1,5 @@
+#exclude videos
+*.mp4
+
+#exclude pycache
+__pycache__/
