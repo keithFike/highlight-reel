@@ -2,7 +2,7 @@
 
 import json
 
-from bitrate_graph import getFrames
+from frame_collector import getFrames
 
 def findActivity(frames_dict):
     PKT_SIZE_THRESHOLD = 100
