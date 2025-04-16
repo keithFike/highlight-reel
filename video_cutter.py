@@ -6,7 +6,10 @@ from activity_finder import findActivity
 from bitrate_graph import getFrames
 
 def cutLocator(frames_dict):
-   pass 
+    for frame in frames_dict:
+        if frames_dict[frame][3] != 0:
+            print(frames_dict[frame][0])
+    #return in_cut, out_cut
 
 def cutVideo(in_cut, out_cut):
     (ffmpeg
@@ -15,5 +18,7 @@ def cutVideo(in_cut, out_cut):
      .run())
 
 if __name__ == "__main__":
-    frames_dict = findActivity(getFrames())
-    cutVideo(in_cut, out_cut)
+    frames_dict = getFrames("test.mp4")
+    findActivity(frames_dict)
+    cutLocator(frames_dict)
+    #cutVideo(in_cut, out_cut)
