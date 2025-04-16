@@ -40,4 +40,6 @@ def plotFrames(frame_dict):
     plt.show()
 
 if __name__ == "__main__":
-    print(json.dumps(getFrames()))
+    print(json.dumps(getFrames("test.mp4")))
+
+    plotFrames(getFrames("h264.mp4"))
