@@ -3,7 +3,7 @@
 import ffmpeg
 
 from activity_finder import findActivity
-from bitrate_graph import getFrames
+from frame_collector import getFrames
 
 def cutLocator(frames_dict):
     for frame in frames_dict:
